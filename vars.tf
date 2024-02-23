@@ -1,8 +1,3 @@
-variable "credential_name" {
-  type = string
-  description = "Openstack Application Credential Name"
-}
-
 variable "credential_id" {
   type = string
   description = "Openstack Application Credential ID"
@@ -12,11 +7,6 @@ variable "credential_secret" {
   type = string
   description = "Openstack Application Credential Secret"
   sensitive = true
-}
-
-variable "tenant_name" {
-  type = string
-  description = "Openstack Tenant name"
 }
 
 variable "auth_url" {
@@ -31,12 +21,6 @@ variable "region" {
   default = "hack-ucf-0"
 }
 
-variable "domain_name" {
-  type = string
-  description = "Openstack domain name"
-  default = "default"
-}
-
 variable "flavor" {
   type = string
   description = "Openstack compute flavor"
@@ -45,7 +29,7 @@ variable "flavor" {
 
 variable "image" {
   type = string
-  description = "Openstack VM image"
+  description = "Openstack VM image name"
 }
 
 variable "instance_name" {

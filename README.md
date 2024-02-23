@@ -13,7 +13,7 @@ Change into the directory and run terraform init:
 cd hackucf-terraform-template && terraform init
 ```
 
-Create a ``terraform.tfvars`` file and add credential id, credential secret, credential name, and tenant name variables.
+Create a ``terraform.tfvars`` file and add credential id and credential secret variables.
 
 Plan your terraform and make sure everything looks good:
 ```
