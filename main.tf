@@ -2,6 +2,7 @@
 resource "openstack_compute_instance_v2" "test-server" {
   name = var.instance_name
   flavor_id = data.openstack_compute_flavor_v2.test_instance_flavor.id
+  key_pair = var.key_pair
 
   block_device {
     uuid = data.openstack_images_image_v2.test_instance_image.id
